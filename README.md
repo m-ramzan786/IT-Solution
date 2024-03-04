@@ -72,8 +72,8 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use and 
 
 ## Badges
 
-![GitHub top language](https://img.shields.io/github/languages/top/m-ramzan786/creative-digital-agency)
-![GitHub license](https://img.shields.io/github/license/m-ramzan786/creative-digital-agency)
+![GitHub top language](https://img.shields.io/github/languages/top/m-ramzan786/IT-Solution)
+![GitHub license](https://img.shields.io/github/license/m-ramzan786/IT-Solution)
 
 ## Feedback and Contributions
 
