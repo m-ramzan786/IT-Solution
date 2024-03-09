@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Main CSS File */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Roboto:wght@400;700&display=swap");
 /* Bootstrap Icons */
@@ -170,6 +177,8 @@ p {
   padding: 80px 0;
   background-color: #f7f7f7;
   /* background-image: linear-gradient(to bottom, #f7f7f7, #fff); === for fade shaed === */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f7f7f7), color-stop(40%, #fff));
+  background-image: -o-linear-gradient(top, #f7f7f7 60%, #fff 40%);
   background-image: linear-gradient(to bottom, #f7f7f7 60%, #fff 40%);
 }
 .feature-box {
@@ -179,6 +188,7 @@ p {
   background-position: center center;
   position: relative;
 }
+
 .feature-box h4 {
   padding: 10px 20px;
   border-radius: 5px;
@@ -188,9 +198,12 @@ p {
   color: #fff;
   display: block;
   position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -0%);
+      -ms-transform: translate(-50%, -0%);
+          transform: translate(-50%, -0%);
   bottom: 10px;
-  width: 80%;
-  left: 10%;
+  width: 300px;
   text-align: center;
 }
 .feature-box:hover h4 {
@@ -236,6 +249,11 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  background-image: -o-linear-gradient(
+    340deg,
+    rgba(0, 0, 0, 0.8) 65%,
+    rgba(255, 255, 255, 0) 35%
+  );
   background-image: linear-gradient(
     110deg,
     rgba(0, 0, 0, 0.8) 65%,
@@ -247,7 +265,6 @@ p {
   z-index: 10;
 }
 .reviews-content h4 {
-  /* font-size: 20px; */
   font-weight: 600;
   letter-spacing: 3px;
 }
@@ -382,12 +399,15 @@ p {
   color: #fff;
 }
 .offcanvas-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  /* width: 100%; */
 }
 .offcanvas-social a {
   color: #333;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
   font-size: 24px;
 }
